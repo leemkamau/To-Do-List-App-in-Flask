@@ -1,0 +1,158 @@
+// Variables
+$primary-color: #d1c10fd3; // Gold
+$secondary-color: #000000;
+$tertiary-color: #d91010b9; // Fresh green
+$background-color: lightyellow; // Light gray
+$font-color: #000000; // Dark gray
+$border-color: #8f8a8a;
+$font-size: 16px;
+$font-family: 'Arial', sans-serif;
+$line-height: 1.5;
+$border-radius: 30px;
+$padding: 10px;
+$margin: 10px;
+$box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+$transition: all 0.3s ease;
+$z-index: 1000;
+
+// Base Styles
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $font-color;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+    border-radius: $border-radius;
+}
+
+// Main Container
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 10px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    text-align: center;
+}
+
+// Headings
+h1 {
+    color: black;
+}
+
+h4 {
+    color: black;
+}
+
+// Buttons
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: $border-radius;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: $transition;
+
+    &:hover {
+        background-color: lighten($primary-color, 10%);
+    }
+}
+
+// Inputs
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px; // Space between input and button
+    width: 100%;
+    border-radius: 50px;;
+}
+
+// Input field (Styled like ChatGPT)
+input {
+    flex: 1; // Allows input to expand
+    padding: 12px 18px;
+    border: 1px solid $border-color;
+    border-radius: 50px; // Smooth round shape
+    font-size: 16px;
+    background-color: #f7f7f8;
+    color: $font-color;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &::placeholder {
+        color: #888;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $primary-color;
+        box-shadow: 0 0 10px rgba($primary-color, 0.3);
+        background-color: #fff;
+    }
+}
+
+// Submit button (Modern Rounded Style)
+button {
+    padding: 12px 18px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 50px; // Circular button
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        background-color: lightgreen;
+    }
+}
+
+
+
+
+// Table Styling
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: $box-shadow;
+    margin-top: 20px;
+
+    th, td {
+        padding: $padding;
+        text-align: left;
+        border: 1px solid $border-color;
+    }
+
+    th {
+        background-color: $tertiary-color;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: lighten($background-color, 5%);
+    }
+}
+
+// Links
+a {
+    color: $primary-color;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+

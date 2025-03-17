@@ -1,0 +1,121 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: lightyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+h4 {
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: rgba(239, 222, 36, 0.8274509804);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border-radius: 50px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 18px;
+  border: 1px solid #8f8a8a;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: #f7f7f8;
+  color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+input::-moz-placeholder {
+  color: #888;
+}
+input::placeholder {
+  color: #888;
+}
+input:focus {
+  outline: none;
+  border-color: rgba(209, 193, 15, 0.8274509804);
+  box-shadow: 0 0 10px rgba(209, 193, 15, 0.3);
+  background-color: #fff;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: rgba(209, 193, 15, 0.8274509804);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  background-color: lightgreen;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #8f8a8a;
+}
+table th {
+  background-color: rgba(217, 16, 16, 0.7254901961);
+  color: white;
+}
+table tr:nth-child(even) {
+  background-color: #fffffa;
+}
+
+a {
+  color: rgba(209, 193, 15, 0.8274509804);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #000000;
+}/*# sourceMappingURL=styles.css.map */

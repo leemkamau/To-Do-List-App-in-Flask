@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Home Page</title>
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <h1>Flask TO DO App</h1>
+
+        {% if tasks | length < 1%}
+        <p>No tasks yet. Add one below.</p>
+        {% else %}
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Due Date</th>
+                <th>Priority</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{task.content}}</td>
+                <td>{{task.created.strftime("%Y-%m-%d")}}</td>
+                <td>
+                    <a href="/delete/{{task.id}}">Delete</a>
+                    <br/>
+                    <a href="/edit/{{task.id}}">Edit</a>
+
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+        <br/>
+
+        <form action = "/" method="POST" id="input-container">
+            <input type="text" name="content" id="content">
+            <input type="submit" name="add task" id="btn_add">
+        </form>
+    </div>
+{% endblock %}
